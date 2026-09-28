@@ -1,0 +1,241 @@
+# Eden/NFS5 PlayStation materials
+# runtime_shared_texture uses game-wide renderer slots that are not stored in this car's local texture bank.
+
+newmtl bloc245_sub2_atlas_material_0000
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0001
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0002
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0003
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0004
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0005
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0006
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0007
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0008
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0009
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_000a
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0010
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0016
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0017
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0018
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0019
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001a
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001b
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001c
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001d
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001e
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_001f
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0020
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0021
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0022
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0023
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0024
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0025
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0026
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0027
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_0029
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl bloc245_sub2_atlas_material_002a
+Kd 1 1 1
+Ka 0 0 0
+Ks 0 0 0
+map_Kd ../textures/bloc245_sub2_materials.png
+map_d -imfchan a ../textures/bloc245_sub2_materials.png
+
+newmtl polygon_colour_808080
+Kd 0.501961 0.501961 0.501961
+Ka 0 0 0
+Ks 0 0 0
+
+newmtl runtime_shared_texture
+Kd 0.12 0.12 0.12
+Ka 0 0 0
+Ks 0 0 0
+
+newmtl untextured_black
+Kd 0 0 0
+Ka 0 0 0
+Ks 0 0 0
