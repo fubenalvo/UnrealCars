@@ -3,6 +3,13 @@
 	"EngineAssociation": "{54CE7CD2-426C-85E2-E2E4-CC948A06E5F8}",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "UnrealCars",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "RawInput",
