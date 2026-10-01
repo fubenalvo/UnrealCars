@@ -2,10 +2,9 @@
 
 TArray UEngineSoundVolumeLibrary::CalculateEngineSoundVolumes(
     float RPM,
-    const TArray& EngineSounds)
+    const TArray& EngineSounds) // English comment: Main volume calculation logic with Equal Power Crossfade
 {
     TArray Volumes;
-
     const int32 Count = EngineSounds.Num();
 
     if (Count <= 0)
@@ -15,63 +14,54 @@ TArray UEngineSoundVolumeLibrary::CalculateEngineSoundVolumes(
 
     Volumes.Init(0.0f, Count);
 
-    // Clamp RPM to non-negative values
+    // English comment: Ensure RPM is valid
     RPM = FMath::Max(0.0f, RPM);
 
-    // If RPM is at or below the top threshold of the first entry (e.g. 0-1000 RPM)
+    // English comment: Below or at the first threshold
     if (RPM <= EngineSounds[0].RPM)
     {
         Volumes[0] = 1.0f;
         return Volumes;
     }
 
-    // Find the first entry whose RPM ceiling is >= the current RPM
-    int32 UpperIndex = INDEX_NONE;
-
-    for (int32 Index = 1; Index < Count; ++Index)
-    {
-        if (EngineSounds[Index].RPM >= RPM)
-        {
-            UpperIndex = Index;
-            break;
-        }
-    }
-
-    // RPM is above all defined RPM points (above the highest ceiling)
-    if (UpperIndex == INDEX_NONE)
+    // English comment: Above or at the highest threshold
+    if (RPM >= EngineSounds[Count - 1].RPM)
     {
         Volumes[Count - 1] = 1.0f;
         return Volumes;
     }
 
-    const int32 LowerIndex = UpperIndex - 1;
-
-    const float LowerRPM = EngineSounds[LowerIndex].RPM;
-    const float UpperRPM = EngineSounds[UpperIndex].RPM;
-    const float RPMRange = UpperRPM - LowerRPM;
-
-    // Protect against duplicate or invalid RPM range values
-    if (FMath::IsNearlyZero(RPMRange) || RPMRange < 0.0f)
+    // English comment: Find the matching RPM bucket
+    for (int32 Index = 0; Index < Count - 1; ++Index)
     {
-        Volumes[UpperIndex] = 1.0f;
-        return Volumes;
+        const float LowerRPM = EngineSounds[Index].RPM;
+        const float UpperRPM = EngineSounds[Index + 1].RPM;
+
+        if (RPM >= LowerRPM && RPM <= UpperRPM)
+        {
+            const float RPMRange = UpperRPM - LowerRPM;
+
+            if (FMath::IsNearlyZero(RPMRange))
+            {
+                Volumes[Index] = 1.0f;
+                return Volumes;
+            }
+
+            // English comment: Normalized progress between 0.0 and 1.0
+            const float LinearAlpha = FMath::Clamp((RPM - LowerRPM) / RPMRange, 0.0f, 1.0f);
+
+            // English comment: Equal-Power Crossfade using sine/cosine or square root
+            // Prevents loudness dipping in the middle of the transition range
+            const float Angle = LinearAlpha * HALF_PI; // 0 to PI/2
+
+            Volumes[Index] = FMath::Cos(Angle);     // Fades out from 1.0 to 0.0
+            Volumes[Index + 1] = FMath::Sin(Angle); // Fades in from 0.0 to 1.0
+
+            return Volumes;
+        }
     }
 
-    const float LinearAlpha = FMath::Clamp(
-        (RPM - LowerRPM) / RPMRange,
-        0.0f,
-        1.0f
-    );
-
-    // SmoothStep gives a softer crossfade than linear interpolation
-    const float Alpha = FMath::SmoothStep(
-        0.0f,
-        1.0f,
-        LinearAlpha
-    );
-
-    Volumes[LowerIndex] = 1.0f - Alpha;
-    Volumes[UpperIndex] = Alpha;
-
+    // English comment: Fallback safety net
+    Volumes[0] = 1.0f;
     return Volumes;
 }
